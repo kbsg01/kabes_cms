@@ -1,0 +1,63 @@
+@import "@shared/tailwind-config/base.css";
+@source "..";
+
+/* App-specific theme tokens (was in tailwind.config.ts theme.extend) */
+@theme {
+  --color-bgColor: var(--bg);
+  --color-textColor: var(--text);
+  --color-textSecondaryColor: var(--text-secondary);
+  --color-primaryColor: var(--primary);
+  --color-primaryLightColor: var(--primary-light);
+  --color-primary2Color: var(--primary-2);
+  --color-primary2LightColor: var(--primary-2-light);
+  --spacing-sectionBase: var(--section-margin-base);
+  --spacing-sectionLarge: var(--section-margin-large);
+}
+
+:root {
+  --section-margin-base: 24px;
+  --section-margin-large: 72px;
+
+  --section-padding-base: 16px;
+  --section-padding-large: 72px;
+}
+
+.light {
+  --bg: #fff;
+  --text: #222222;
+  --text-secondary: #666666;
+  --primary: #4f46e5;
+  --primary-light: #e4e1ff;
+  --primary-2: #ff0765;
+  --primary-2-light: #ffe6f0;
+}
+
+.dark {
+  --bg: #222222;
+  --text: #f6f6f6;
+  --text-secondary: #999999;
+  --primary: #4f46e5;
+  --primary-light: #e4e1ff;
+  --primary-2: #ff0765;
+  --primary-2-light: #ffe6f0;
+}
+
+.light-gray {
+  --bg: #f6f6f6;
+  --text: #222222;
+  --text-secondary: #666666;
+  --primary: #4f46e5;
+  --primary-light: #e4e1ff;
+  --primary-2: #ff0765;
+  --primary-2-light: #ffe6f0;
+}
+
+.dark-gray {
+  --bg: #5b5b5b;
+  --text: #f6f6f6;
+  --text-secondary: #bababa;
+  --primary: #4f46e5;
+  --primary-light: #e4e1ff;
+  --primary-2: #ff0765;
+  --primary-2-light: #ffe6f0;
+}
